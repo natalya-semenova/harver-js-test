@@ -4,11 +4,17 @@
   "description": "Javascript assessment for Harver engineering candidates",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "babel-node src/index.js"
   },
   "author": "Phil Mander <philip@harver.com>",
   "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "ramda": "^0.25.0",
     "random-words": "^1.1.0",
     "word-maker": "file:word-maker"
   }
